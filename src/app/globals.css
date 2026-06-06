@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 5%, rgba(180, 223, 187, 0.35), transparent 26rem),
+    linear-gradient(180deg, #fbf8ee 0%, #f4faef 42%, #ffffff 100%);
+  color: #143a22;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #b4dfbb;
+  color: #143a22;
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white;
+}
